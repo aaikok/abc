@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>jquery</title>
+</head>
+<body>
+    <div class="container">
+        <h1>フェードイン</h1>
+        <div class="item">
+            <h3>フェードイン</h3>
+        </div>
+        <div class="item">
+            <h3>フェードイン</h3>
+        </div>
+        <div class="item">
+            <h3>フェードイン</h3>
+        </div>
+        <div class="item">
+            <h3>フェードイン</h3>
+        </div>
+        <div class="item">
+            <h3>フェードイン</h3>
+        </div>
+
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./jquery.inview.min.js"></script>
+   <script>
+        $(function (){
+            $(".item").on("inview",function (event,view){
+                if(view)
+                {$(this).addClass('show')}
+                 else {
+                    $(this).removeClass('show')
+                }
+
+            })
+        })  
+   </script>
+</body>
+</html>

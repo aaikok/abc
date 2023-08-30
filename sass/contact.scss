@@ -1,0 +1,104 @@
+@import '../sass/common.scss';
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 28px;
+    color: #222;
+}
+.header-nav ul{
+    display: flex;
+    li {
+        list-style: none;
+        margin: 0 20px;
+        a{
+            font-size: 22px;
+        }
+    }
+}
+
+.contact {
+    max-width: 900px;
+    margin: 0 auto;
+    h4 {
+        font-size: 40px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        label {
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 400px;
+            height: 30px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            padding: 6px;
+            font-size: 16px;
+        }
+        textarea {
+            width: 400px;
+            height: 200px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            font-size: 16px;
+        }
+        .submit {
+            background-color: #F1F1F1;
+            width: 200px;
+            height: 80px;
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 22px;
+            text-align: center;
+        }
+
+    }
+}
+
+/* sp */
+@media (max-width:599px) {
+    .contact {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 80px;
+    h4 {
+        font-size: 26px;
+    }
+    form {
+        label {
+            font-size: 16px;
+        }
+        input,
+        textarea {
+            width: 100%;
+        }
+        .submit {
+            font-size: 16px;
+        }
+    }
+ }
+}
